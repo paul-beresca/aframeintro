@@ -15,20 +15,21 @@
         id="lightSphere" 
         geometry="primitive: sphere"
         material="color: #FFF; shader: flat"
-        position="-8, 5, -2"
+        position="-8, 10, -2"
         light="type: point"
         animation__leftToRight="
           property: position; 
           dir: alternate; 
           loop: true; 
-          to: 8"
+          to: 8;
+          easing: easeInSine"
       >
       </a-entity>
       <!-- PARTICLES -->
       <a-entity
         particle-system="
           preset:dust; 
-          color: brown;
+          color: #D2B48C,#D2B48C;
           particleCount: 70000"
         position="-1 1 -3"
       >
